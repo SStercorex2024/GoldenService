@@ -1,0 +1,25 @@
+@use "vars" as *;
+@use "fonts" as *;
+
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 32rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-family: "SF Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-color-light);
+  color: var(--gray-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
