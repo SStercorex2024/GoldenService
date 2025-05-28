@@ -6,15 +6,13 @@ body {
   height: 100%;
 }
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 body {
-  min-width: 32rem;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1.625;
   font-family: "SF Pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   background-color: var(--bg-color-light);
   color: var(--gray-color);
 }
