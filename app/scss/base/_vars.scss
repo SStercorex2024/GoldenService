@@ -1,5 +1,6 @@
 :root {
   --gb-light-color: #ffffff;
+  --light-color: #ffffff;
   --bg-light-alt: #f2f8ff;
   --gray-color: #454f5b;
   --dark-color: #161c24;
@@ -10,4 +11,9 @@
   --light-blue-color: #add7ff;
   --rad-color: #e44286;
   --color-disabled: #adadad;
+
+  --container-padding: 10px;
+
+  --transition-speed: 0.3s;
+  --transition-func: ease-in-out;
 }
