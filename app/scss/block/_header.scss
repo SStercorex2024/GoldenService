@@ -6,17 +6,27 @@
   padding-top: 10px;
   padding-bottom: 10px;
   color: var(--light-color);
+  font-size: 16px;
+  line-height: 1.625;
 
   a {
     color: var(--light-color);
     transition: color var(--transition-speed) var(--transition-func);
-
     &:hover {
       color: var(--main-color);
     }
   }
 }
-
+.top-navbar {
+  box-shadow: inset 0 -1px 0 0 #c4cdd5;
+  .navbar-collapse > ul > li > a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+.navbar-brand {
+  margin-right: 100px;
+}
 .navbar-side {
   position: relative;
   display: flex;
@@ -26,15 +36,30 @@
     gap: 25px;
     margin: 0 42px 0 0;
   }
+  & > ul > li > a {
+    font-style: 18px;
+    transition: color var(--transition-speed) var(--transition-func);
+    color: var(--gray-color);
+  }
+  & > ul > li > a:hover {
+    color: var(--main-color);
+  }
   .navbar-phone {
     display: flex;
     align-items: center;
     column-gap: 8px;
     color: var(--main-color);
-
     a {
-      color: var(--gray-color);
+      text-decoration: none;
     }
+  }
+  .dropdown-item {
+    color: black;
+    transition: all var(--transition-speed) var(--transition-func);
+  }
+  .dropdown-item:hover {
+    color: var(--main-color);
+    background-color: var(--color-bg);
   }
   .search-form {
     position: absolute;
@@ -65,10 +90,18 @@
     width: 0;
     opacity: 0;
     z-index: 10;
-    transition: opacity var(--transition-speed) var(--transition-func), width var(--transition-speed) var(--transition-func);
+    transition: opacity var(--transition-speed) var(--transition-func),
+      width var(--transition-speed) var(--transition-func);
   }
   .form-control.show {
     width: 100%;
     opacity: 1;
+  }
+}
+
+.nav-link {
+  transition: color var(--transition-speed) var(--transition-func);
+  &:hover {
+    color: var(--main-color);
   }
 }

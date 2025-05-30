@@ -1,11 +1,24 @@
-@media all and (max-width: 992px) {
-    .callback{
-    display: none;
+@media all and (min-width: 992px) {
+  .dropdown-toggle:hover {
+    &::after {
+      transform: rotate(95deg);
     }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .dropdown-toggle.show {
+    &::after {
+      transform: rotate(95deg);
+    }
+  }
+  .callback {
+    display: none;
+  }
 }
 @media all and (max-width: 768px) {
-    .top-line{
-        font-style: 12px;
-        line-height: 1;
-    }
+  .top-line {
+    font-style: 12px;
+    line-height: 1;
+  }
 }

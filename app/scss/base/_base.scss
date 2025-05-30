@@ -21,3 +21,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.dropdown-toggle::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  border: 0;
+  font-size: 10px;
+  transition: all var(--transition-speed) var(--transition-func);
+}
+
